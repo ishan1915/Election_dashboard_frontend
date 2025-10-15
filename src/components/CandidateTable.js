@@ -7,6 +7,7 @@ const CandidateTable = ({ data }) => {
         <thead className="bg-gray-200 text-gray-700">
           <tr>
             <th className="px-3 py-2 border">State</th>
+            <th className="px-3 py-2 border">Constituency</th>
             <th className="px-3 py-2 border">Candidate</th>
             <th className="px-3 py-2 border">Party</th>
             <th className="px-3 py-2 border">Year</th>
@@ -18,6 +19,7 @@ const CandidateTable = ({ data }) => {
           {data.map((row, idx) => (
             <tr key={idx} className="text-center hover:bg-gray-50">
               <td className="border px-3 py-2">{row.state}</td>
+              <td className="border px-3 py-2">{row.constituency}</td>
               <td className="border px-3 py-2">{row.name}</td>
               <td className="border px-3 py-2">{row.party}</td>
               <td className="border px-3 py-2">{row.year}</td>
