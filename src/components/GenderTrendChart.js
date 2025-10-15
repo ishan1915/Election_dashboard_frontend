@@ -7,7 +7,7 @@ const GenderRepresentationChart = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/gender-representation/")
+      .get("https://election-dashboard-nu9m.onrender.com/api/gender-representation/")
       .then((res) => setData(res.data))
       .catch((err) => console.error("Error fetching gender data:", err));
   }, []);

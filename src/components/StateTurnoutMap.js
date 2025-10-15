@@ -11,7 +11,7 @@ const StateTurnoutMap = ({ year }) => {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/turnout/?year=${year}`) // ✅ turnout API
+      .get(`https://election-dashboard-nu9m.onrender.com/api/turnout/?year=${year}`) // ✅ turnout API
       .then((res) => {
         const turnoutData = res.data.results || res.data;
 

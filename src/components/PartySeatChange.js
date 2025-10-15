@@ -18,7 +18,7 @@ const PartySeatChange = ({ year1, year2 }) => {
     if (!year1 || !year2) return;
 
     axios
-      .get(`http://127.0.0.1:8000/api/party-seat-change/?year1=${year1}&year2=${year2}`)
+      .get(`https://election-dashboard-nu9m.onrender.com/api/party-seat-change/?year1=${year1}&year2=${year2}`)
       .then((res) => {
         setData(res.data.details || []);
         setSummary({

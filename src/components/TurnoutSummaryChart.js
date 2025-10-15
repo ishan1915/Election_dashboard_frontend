@@ -18,7 +18,7 @@ const TurnoutSummaryChart = ({ year }) => {
     if (!year) return;
 
     axios
-      .get(`http://127.0.0.1:8000/api/turnout-summary/?year=${year}`)
+      .get(`https://election-dashboard-nu9m.onrender.com/api/turnout-summary/?year=${year}`)
       .then((res) => {
         setData(res.data.state_turnouts || []);
         setHighest({

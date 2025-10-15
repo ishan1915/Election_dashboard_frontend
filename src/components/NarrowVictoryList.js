@@ -8,7 +8,7 @@ const NarrowVictoryList = ({ year }) => {
     const fetchMargins = async () => {
       try {
         const res = await axios.get(
-          `http://127.0.0.1:8000/api/narrow-victory-margins/${year ? "?year=" + year : ""}`
+          `https://election-dashboard-nu9m.onrender.com/api/narrow-victory-margins/${year ? "?year=" + year : ""}`
         );
         setData(res.data);
       } catch (error) {

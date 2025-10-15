@@ -14,7 +14,7 @@ const VictoryHistogram = ({ year }) => {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/winner-margins/?year=${year}`)
+      .get(`https://election-dashboard-nu9m.onrender.com/api/winner-margins/?year=${year}`)
       .then((res) => {
         const results = res.data.results || res.data;
 

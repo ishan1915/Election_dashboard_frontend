@@ -7,7 +7,7 @@ const WomenCandidatesChart = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/women-candidates-percentage/")
+      .get("https://election-dashboard-nu9m.onrender.com/api/women-candidates-percentage/")
       .then((res) => {
         setData(res.data.yearly_data || []);
       })

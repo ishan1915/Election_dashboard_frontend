@@ -22,7 +22,7 @@ const EducationWinCorrelation = () => {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/education-win-correlation/")
+      .get("https://election-dashboard-nu9m.onrender.com/api/education-win-correlation/")
       .then((res) => {
         // Transform API data into chart format
         const grouped = {};

@@ -21,7 +21,7 @@ const VoteShareDonut = ({ year }) => {
 
   useEffect(() => {
     axios
-      .get(`http://127.0.0.1:8000/api/vote-share/?year=${year}`)
+      .get(`https://election-dashboard-nu9m.onrender.com/api/vote-share/?year=${year}`)
       .then((res) => {
         setData(res.data);
       })

@@ -28,7 +28,7 @@ const Filters = ({ filters, setFilters }) => {
       setLoadingConstituencies(true);
       try {
         const res = await axios.get(
-          `http://127.0.0.1:8000/api/constituencies/?state=${filters.state}`
+          `https://election-dashboard-nu9m.onrender.com/api/constituencies/?state=${filters.state}`
         );
         const options = res.data.map((item) => ({
           value: item.name,
