@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "https://election-dashboard-nu9m.onrender.com/api";
 
 export const getCandidates = async (filters = {}) => {
   // ✅ Set default year to 2019 if not provided
